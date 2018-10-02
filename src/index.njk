@@ -1,0 +1,23 @@
+---
+title: Project Everest
+description: Welcome to Project Everest
+layout: layouts/base.njk
+---
+
+{% include "src/_includes/header.njk" %}
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+        <h1 class="govuk-heading-l">Welcome to the National Centre of Computing Education</h1>
+        <p class="govuk-body">The national centre, along with 40 leading schools across the country, will help improve teaching of the computing curriculum and is supported by a new programme which will train up to 8000 computing teachers on the latest digital skills – that is enough to ensure every secondary school in England has a teacher who can support pupils to succeed.</p>
+      </div>
+    </div>
+    {% include "src/_includes/training.njk" %}
+    {% include "src/_includes/mailing-list.njk" %}
+    {% include "src/_includes/jobs.njk" %}
+  </main>
+</div>
+
+{% include "src/_includes/footer.njk" %}
