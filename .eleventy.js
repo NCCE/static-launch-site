@@ -2,6 +2,7 @@ const { buildSrc, buildDest } = require("./paths");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.setLibrary("njk", require("nunjucks").configure(""));
+  eleventyConfig.addPassthroughCopy("src/assets/images");
   return {
     templateFormats: ["html", "njk"],
     pathPrefix: "/",
@@ -12,7 +13,6 @@ module.exports = function(eleventyConfig) {
     dir: {
       input: buildSrc,
       output: buildDest,
-      data: "_data",
       includes: "_includes"
     }
   };
