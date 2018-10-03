@@ -1,0 +1,48 @@
+{% from "node_modules/govuk-frontend/components/input/macro.njk" import govukInput %}
+{% from "node_modules/govuk-frontend/components/button/macro.njk" import govukButton %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <p class="govuk-heading-m">Stay up to date</p>
+        <p class="govuk-body">Be first to know when we launch resources, training and events.</p>
+        <div class="mc_embed_signup">
+            <form action="https://raspberrypi.us9.list-manage.com/subscribe/post?u=54fbc2c9ac9d9dd634725107a&amp;id=72d5b6e653" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+                {{ govukInput({
+                    label: {
+                        text: "Email Address"
+                    },
+                    id: "mce-EMAIL",
+                    name: "email"
+                }) }}
+                <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_54fbc2c9ac9d9dd634725107a_72d5b6e653" tabindex="-1" value=""></div>
+
+                {{ govukButton({
+                    text: "Get updates",
+                    type: "submit",
+                    value: "Subscribe",
+                    name: "subscribe"
+                }) }}
+            </form>
+            <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='LINKID';ftypes[3]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+        </div>
+    </div>
+    <div class="govuk-grid-column-one-third">
+      <ul class="govuk-list">
+        <li>
+            <a href="#" class="govuk-link">Like us on Facebook</a>
+        </li>
+        <li>
+            <a href="#" class="govuk-link">Follow @NCCE on Twitter</a>
+        </li>
+        <li>
+            <a href="#" class="govuk-link">Visit our LinkedIn profile</a>
+        </li>
+      </ul>
+    </div>
+</div>
+
