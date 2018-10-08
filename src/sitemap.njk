@@ -1,0 +1,15 @@
+---
+permalink: /sitemap.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- for item in collections.all %}
+  {% if item.data.includeInSitemap %}
+    <url>
+      <loc>https://example.com{{ item.url }}</loc>
+      <changefreq>{{ item.data.changeFreq or "monthly" }}</changefreq>
+      <priority>{{ item.data.priority or "0.5" }}</priority>
+    </url>
+  {% endif %}
+{%- endfor %}
+</urlset>
