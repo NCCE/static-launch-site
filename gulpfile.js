@@ -1,8 +1,10 @@
 const gulp = require("gulp");
-const sass = require("gulp-sass");
-const shell = require("gulp-shell");
-const serve = require("gulp-serve");
 const clean = require("gulp-clean");
+const concat = require("gulp-concat");
+const sass = require("gulp-sass");
+const serve = require("gulp-serve");
+const shell = require("gulp-shell");
+const uglify = require("gulp-uglify");
 
 const { buildSrc, buildDest } = require("./paths");
 
@@ -24,8 +26,14 @@ gulp.task("clean", function() {
 
 gulp.task("javascript", function() {
   return gulp
-    .src("node_modules/govuk-frontend/all.js")
-    .pipe(gulp.dest(buildDest + "/assets/js"));
+    .src([
+      "node_modules/govuk-frontend/all.js",
+      "node_modules/cookieconsent/build/cookieconsent.min.js",
+      buildSrc + "/assets/js/main.js"
+    ])
+    .pipe(uglify())
+    .pipe(concat("script.js"))
+    .pipe(gulp.dest(buildDest + "/assets/js/"));
 });
 
 gulp.task(
