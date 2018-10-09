@@ -4,6 +4,9 @@
   font-family: Helvetica, sans-serif;
 }
 
+$dark-purple: #333448;
+$white: #FFFFFF;
+
 #global-cookie-message {
   background-color: #d5e8f3;
   width: 100%;
@@ -22,3 +25,9 @@
 .cc-dismiss {
   float: right;
 }
+
+// import NCCE-specific colors
+@import 'settings/_colors';
+
+// import NCCE-specific components
+@import 'components/footer';
