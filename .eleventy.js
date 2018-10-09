@@ -3,6 +3,9 @@ const { buildSrc, buildDest } = require("./paths");
 module.exports = function(eleventyConfig) {
   eleventyConfig.setLibrary("njk", require("nunjucks").configure(""));
   eleventyConfig.addPassthroughCopy("src/assets/images");
+  eleventyConfig.addCollection("allPages", function(collection) {
+    return collection.getAll();
+  });
   return {
     templateFormats: ["html", "njk"],
     pathPrefix: "/",
