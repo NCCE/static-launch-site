@@ -1,8 +1,16 @@
 .footer {
   background-color: $dark-purple;
-
+  color: $white;
 }
 
 .govuk-footer__link {
   color: $white;
 }
+
+.footer-column-width {
+  width: 60%;
+  @include iota-breakpoint('md') {
+    width: 70%;
+  }
+}
+

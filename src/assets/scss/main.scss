@@ -1,4 +1,8 @@
+// import GOV UK design system styles
 @import "node_modules/govuk-frontend/all";
+
+// import Bits
+@import 'node_modules/raspberry-pi-bits/src/styles/main.scss';
 
 * {
   font-family: Helvetica, sans-serif;
@@ -26,8 +30,9 @@ $white: #FFFFFF;
   float: right;
 }
 
-// import NCCE-specific colors
+// import NCCE components
+@import 'components/footer';
+
+// import NCCE settings
 @import 'settings/_colors';
 
-// import NCCE-specific components
-@import 'components/footer';
