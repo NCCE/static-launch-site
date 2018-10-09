@@ -1,24 +1,9 @@
+// import GOV UK design system styles
 @import "node_modules/govuk-frontend/all";
 
-* {
-  font-family: Helvetica, sans-serif;
-}
+// import NCCE components
+@import "components/_cookie-notice.scss";
 
-#global-cookie-message {
-  background-color: #d5e8f3;
-  width: 100%;
-  padding: 10px 0;
-
-  p {
-    margin: auto;
-    max-width: 960px;
-  }
-
-  .govuk-button {
-    display: inline;
-  }
-}
-
-.cc-dismiss {
-  float: right;
-}
+// import NCCE settings
+@import "settings/_fonts.scss";
+@import "settings/_typography.scss";
