@@ -1,9 +1,11 @@
 // import GOV UK design system styles
 @import "node_modules/govuk-frontend/all";
 
-// import NCCE components
-@import "components/_cookie-notice.scss";
-
 // import NCCE settings
+@import "settings/_colors.scss";
 @import "settings/_fonts.scss";
 @import "settings/_typography.scss";
+
+// import NCCE components
+@import "components/_cookie-notice.scss";
+@import "components/_header.scss";
