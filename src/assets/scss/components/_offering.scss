@@ -1,0 +1,6 @@
+.ncce-offering__panel {
+  margin-bottom: 30px;
+  @include govuk-media-query($from: tablet) {
+    margin-bottom: 0;
+  }
+}
