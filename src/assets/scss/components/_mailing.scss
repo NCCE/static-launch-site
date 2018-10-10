@@ -1,5 +1,9 @@
 .mailing-wrapper {
   display: flex;
+  flex-direction: column;
+  @include govuk-media-query($from: tablet) {
+    flex-direction: row;
+  }
 }
 
 // .mailing-content,
@@ -10,11 +14,15 @@
 
 .mailing-content {
   background-color: $ncce-purple;
-  clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 87%);
   flex-basis: 60%;
   flex-grow: 2;
   flex-shrink: 1;
   height: 240px;
+
+  @include govuk-media-query($from: tablet) {
+    clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%);
+  }
 
   .govuk-button {
     background-color: $ncce-pink;
@@ -40,5 +48,8 @@
   flex-shrink: 2;
   height: 300px;
   margin-left: -330px;
-  margin-top: 0;
+  margin-top: -50px;
+  @include govuk-media-query($from: tablet) {
+    margin-top: 0;
+  }
 }
