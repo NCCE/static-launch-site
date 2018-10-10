@@ -2,27 +2,43 @@
   display: flex;
 }
 
-.mailing-content,
-.mailing-image {
-  flex-basis: 50%;
-  flex-grow: 1;
-  flex-shrink: 1;
-}
+// .mailing-content,
+// .mailing-image {
+//   flex-grow: 1;
+//   flex-shrink: 1;
+// }
 
 .mailing-content {
-  background-color: #009b3d;
-  clip-path: polygon(5rem 0%, 100% 0%, 100% 100%, 0% 100%);
-  height: 300px;
-  margin-left: -5rem;
-  order: 2;
-  padding-left: 120px;
+  background-color: $ncce-purple;
+  clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%);
+  flex-basis: 60%;
+  flex-grow: 2;
+  flex-shrink: 1;
+  height: 240px;
+
+  .govuk-button {
+    background-color: $ncce-pink;
+    box-shadow: 0 2px 0 $ncce-dark-pink;
+  }
+  .govuk-label {
+    color: $ncce-white !important;
+    font-weight: bold;
+  }
+}
+
+.mailing-heading,
+.mailing-body {
+  color: $ncce-white !important;
 }
 
 .mailing-image {
   background-image: url(/assets/images/larry-the-cat2.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
+  flex-basis: 40%;
+  flex-grow: 1;
+  flex-shrink: 2;
   height: 300px;
+  margin-left: -330px;
   margin-top: 0;
-  order: 1;
 }

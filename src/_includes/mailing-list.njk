@@ -1,13 +1,11 @@
 {% from "node_modules/govuk-frontend/components/input/macro.njk" import govukInput %}
 {% from "node_modules/govuk-frontend/components/button/macro.njk" import govukButton %}
 
-<div class="govuk-width-container">
-  <div class="govuk-main-wrapper">
     <div class="mailing-wrapper">
-        <div class="mailing-content">
-            <p class="govuk-heading-m">Stay up to date</p>
-            <p class="govuk-body">Be first to know when we launch resources, training and events.</p>
-            <div class="mc_embed_signup">
+        <div class="mailing-content govuk-!-padding-9">
+            <p class="govuk-heading-m mailing-heading">Stay up to date</p>
+            <p class="govuk-body mailing-body">Be first to know when we launch resources, training and events.</p>
+            <div class="mc_embed_signup govuk-!-width-one-third">
                 <form action="https://raspberrypi.us9.list-manage.com/subscribe/post?u=54fbc2c9ac9d9dd634725107a&amp;id=72d5b6e653" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 
                     {{ govukInput({
@@ -36,7 +34,5 @@
         <div class="mailing-image">
           {# <img src="assets/images/larry-the-cat2.jpg" alt="An image of cat"> #}
         </div>
-    </div>
   </div>
-</div>
 
