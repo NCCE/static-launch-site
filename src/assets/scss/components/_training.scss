@@ -1,3 +1,16 @@
+.ncce-training {
+  background-image: url(/assets/images/training.svg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 15%;
+  padding-bottom: 25px;
+  padding-top: 50px;
+  @include govuk-media-query($from: tablet) {
+    background-position: 35% 2rem;
+    background-size: 7%;
+  }
+}
+
 .ncce-training__link {
   color: $ncce-dark-blue !important;
 }
