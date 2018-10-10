@@ -1,10 +1,23 @@
-.jobs-section {
+.ncce-jobs-container {
   background-color: $ncce-lavender;
 }
 
-.magda {
-  background-image: url('images/you.png');
-  background-position: left;
+.ncce-jobs__heading {
+  background-image: url(/assets/images/you.png);
+  background-position: left 1rem;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: 7rem;
+
+  @include govuk-media-query($from: tablet) {
+    background-position: left 1rem;
+    background-size: 10rem;
+  }
+}
+
+.ncce-jobs__body {
+  margin-top: 7rem;
+  @include govuk-media-query($from: tablet) {
+    margin-left: 30%;
+    margin-top: 1rem;
+  }
 }
