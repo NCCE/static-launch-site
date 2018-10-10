@@ -1,6 +1,7 @@
 ## Status
 
 - Current Status: WIP / Ready for (front-end / tech) review
+- Review app _add url or delete_
 - Closes _add issue numbers or delete_
 - Related to _add issue numbers or delete_
 
