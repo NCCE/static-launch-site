@@ -8,29 +8,28 @@
     <link rel="stylesheet" href="assets/css/main.css" media="screen" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-		<title>{{ metadata.title }}{% if title %} - {{ title }}{% endif %}</title>
+		<title>{{ metadata.title }}{% if title %} {{ title }} {% endif %}</title>
 
     <meta name="description" content="" />
-    <meta itemprop="description" content="">
+    <meta itemprop="description" content="" />
 
     <meta property="og:site_name" content="" />
     <meta property="og:title" content="" />
-
     <meta property="og:url" content="" />
     <meta property="og:type" content="website" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:alt" content="" />
 
     {% if canonical %}
       <link rel="canonical" href="{{ canonical }}" />
     {% endif %}
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="">
     <meta name="twitter:title" content="">
     <meta name="twitter:description" content="">
-    <meta property="og:description" content="">
-    <meta name="twitter:creator" content="">
     <meta name="twitter:image" content="">
-    <meta property="og:image" content="">
+    <meta name="twitter:image:alt" content="">
   </head>
   <body class="js-enabled govuk-template__body">
     <section>
