@@ -6,22 +6,16 @@
   }
 }
 
-// .mailing-content,
-// .mailing-image {
-//   flex-grow: 1;
-//   flex-shrink: 1;
-// }
-
 .mailing-content {
   background-color: $ncce-purple;
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 87%);
-  flex-basis: 60%;
+  flex-basis: 80%;
   flex-grow: 2;
   flex-shrink: 1;
   height: 240px;
 
   @include govuk-media-query($from: tablet) {
-    clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 86% 0%, 100% 100%, 0% 100%);
   }
 
   .govuk-button {
@@ -40,16 +34,23 @@
 }
 
 .mailing-image {
-  background-image: url(/assets/images/larry-the-cat2.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  flex-basis: 40%;
+  flex-basis: 50%;
   flex-grow: 1;
   flex-shrink: 2;
-  height: 300px;
-  margin-left: -330px;
-  margin-top: -50px;
+  margin-bottom: 4rem;
+  margin-left: 0;
+  margin-top: -5rem;
+  img {
+    width: 100%;
+  }
   @include govuk-media-query($from: tablet) {
+    flex-basis: 30%;
+    height: 360px;
+    margin-bottom: 0;
+    margin-left: -200px;
     margin-top: 0;
+    img {
+      height: 360px;
+    }
   }
 }
