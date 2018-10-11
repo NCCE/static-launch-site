@@ -18,11 +18,12 @@
 
 .mailing-content {
   background-color: $ncce-purple;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 87%);
-  // flex-basis: 80%;
-  // flex-grow: 2;
-  // flex-shrink: 1;
+  // clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 87%);
+  flex-basis: 80%;
+  flex-grow: 2;
+  flex-shrink: 1;
   // height: 240px;
+  padding-top: 4rem;
 
   @include govuk-media-query($from: tablet) {
     clip-path: polygon(0% 0%, 86% 0%, 100% 100%, 0% 100%);
@@ -39,15 +40,18 @@
 }
 
 .mailing-image {
+  margin-bottom: -4px;
   // flex-basis: 50%;
   // flex-grow: 1;
   // flex-shrink: 2;
   // margin-bottom: 4rem;
   // margin-left: 0;
   // margin-top: -5rem;
-  // img {
-  //   width: 100%;
-  // }
+  margin-left: -7rem;
+
+  img {
+    width: 100%;
+  }
   // @include govuk-media-query($from: tablet) {
   //   flex-basis: 30%;
   //   height: 360px;
