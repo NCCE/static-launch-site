@@ -6,9 +6,13 @@
   padding-bottom: 25px;
   padding-top: 50px;
   @include govuk-media-query($from: tablet) {
-    background-position: 35% 2rem;
-    background-size: 7%;
+    background: none;
+    padding-top: 0;
   }
+}
+
+.ncce-training__heading {
+  margin-top: 2.5rem;
 }
 
 .ncce-training__link {
