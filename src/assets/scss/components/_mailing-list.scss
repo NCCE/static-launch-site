@@ -1,56 +1,48 @@
 .mailing-wrapper {
-  display: flex;
-  flex-direction: column;
+  background-color: $ncce-purple;
+  background-image: none;
+  margin: 0;
+
   @include govuk-media-query($from: tablet) {
-    flex-direction: row;
+    background-image: url(/assets/images/stay-up-to-date2.jpg);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  .govuk-main-wrapper {
+    background-color: $ncce-purple;
+
+    @include govuk-media-query($from: tablet) {
+      clip-path: polygon(0% 0%, 50% 0%, 100% 100%, 0% 100%);
+    }
+
+    @include govuk-media-query($from: desktop) {
+      clip-path: polygon(0% 0%, 85% 0%, 100% 100%, 0% 100%);
+    }
   }
 }
 
 .mailing-content {
-  background-color: $ncce-purple;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 87%);
   flex-basis: 80%;
   flex-grow: 2;
   flex-shrink: 1;
-  height: 240px;
-
-  @include govuk-media-query($from: tablet) {
-    clip-path: polygon(0% 0%, 86% 0%, 100% 100%, 0% 100%);
-  }
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
 
   .govuk-button {
     background-color: $ncce-pink;
     box-shadow: 0 2px 0 $ncce-dark-pink;
+    font-weight: bold;
   }
+
   .govuk-label {
-    color: $ncce-white !important;
+    color: $ncce-white;
     font-weight: bold;
   }
 }
 
 .mailing-heading,
 .mailing-body {
-  color: $ncce-white !important;
-}
-
-.mailing-image {
-  flex-basis: 50%;
-  flex-grow: 1;
-  flex-shrink: 2;
-  margin-bottom: 4rem;
-  margin-left: 0;
-  margin-top: -5rem;
-  img {
-    width: 100%;
-  }
-  @include govuk-media-query($from: tablet) {
-    flex-basis: 30%;
-    height: 360px;
-    margin-bottom: 0;
-    margin-left: -200px;
-    margin-top: 0;
-    img {
-      height: 360px;
-    }
-  }
+  color: $ncce-white;
 }
