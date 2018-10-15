@@ -44,7 +44,7 @@ gulp.task(
   })
 )
 
-gulp.task('generate', shell.task('NODE_ENV=development eleventy'))
+gulp.task('generate', shell.task('eleventy'))
 
 gulp.task('scss', function() {
   return gulp
