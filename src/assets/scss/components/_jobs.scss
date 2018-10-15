@@ -1,5 +1,10 @@
 .ncce-jobs-container {
   background-color: $ncce-lavender;
+  padding: 1.5rem 0;
+}
+
+.ncce-jobs__heading {
+  margin-bottom: 1rem;
 }
 
 .ncce-jobs__image {
@@ -9,4 +14,12 @@
   @include govuk-media-query($from: tablet) {
     width: 75%;
   }
+}
+
+.ncce-jobs__list {
+  margin-bottom: 0;
+}
+
+.ncce-jobs__list-item {
+  margin: 0.8rem 0;
 }
