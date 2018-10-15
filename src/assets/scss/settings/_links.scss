@@ -1,0 +1,31 @@
+.ncce-link__on-light {
+  color: $ncce-blue-link !important;
+  &:hover {
+    color: $ncce-pink !important;
+  }
+  &:focus {
+    color: $ncce-pink !important;
+  }
+  &:active {
+    color: $ncce-grey-x-light !important;
+  }
+  &:visited {
+    color: $ncce-purple !important;
+  }
+}
+
+.ncce-link__on-dark {
+  color: $ncce-grey-x-light !important;
+  &:hover {
+    color: $ncce-white !important;
+  }
+  &:focus {
+    color: $ncce-white !important;
+  }
+  &:active {
+    color: $ncce-black !important;
+  }
+  &:visited {
+    color: $ncce-grey !important;
+  }
+}
