@@ -5,7 +5,11 @@
 
 .ncce-footer__heading {
   color: $ncce-white;
-  margin: 0;
+  margin-bottom: 20px;
+
+  @include govuk-media-query($from: tablet) {
+    margin: 0;
+  }
 }
 
 .ncce-footer__list {
