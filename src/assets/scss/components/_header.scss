@@ -12,3 +12,15 @@
   font-family: $font-family-heading;
   font-size: 24px;
 }
+
+.govuk-header__link--homepage {
+  &:hover {
+    border-color: transparent;
+    color: $ncce-grey-x-light;
+  }
+  &:focus {
+    background-color: $ncce-pink;
+    color: $ncce-white;
+    outline-color: $ncce-pink;
+  }
+}
