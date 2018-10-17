@@ -4,7 +4,9 @@
     color: $ncce-pink !important;
   }
   &:focus {
+    background-color: $ncce-grey-x-light !important;
     color: $ncce-pink !important;
+    outline-color: $ncce-grey-x-light !important;
   }
   &:active {
     color: $ncce-grey-x-light !important;
@@ -20,7 +22,9 @@
     color: $ncce-white !important;
   }
   &:focus {
+    background-color: $ncce-black !important;
     color: $ncce-white !important;
+    outline-color: $ncce-black !important;
   }
   &:active {
     color: $ncce-black !important;
