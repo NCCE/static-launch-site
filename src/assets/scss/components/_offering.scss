@@ -18,13 +18,14 @@
 
 .ncce-offering__panel {
   margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   @include govuk-media-query($from: tablet) {
     margin-bottom: 0;
   }
-}
-
-.ncce-offering__panel:last-child {
-  margin-bottom: 0;
 }
 
 .ncce-offering__heading {
