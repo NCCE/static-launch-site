@@ -37,7 +37,7 @@
 }
 
 .ncce-training__google-logo {
-  display: inline-block;
+  display: block;
   height: 38px;
   margin-right: 5px;
   padding: 5px 0;
@@ -45,6 +45,7 @@
   width: 90px;
 
   @include govuk-media-query($from: tablet) {
+    display: inline-block;
     margin-right: 10px;
   }
 }

@@ -12,6 +12,10 @@
   }
 }
 
+.ncce-offering__body {
+  font-size: 16px;
+}
+
 .ncce-offering__panel {
   margin-bottom: 15px;
   @include govuk-media-query($from: tablet) {
