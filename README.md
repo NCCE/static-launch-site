@@ -12,6 +12,14 @@ Once you have the correct node version stated in `.node-version`, you will want 
 
 ## Development
 
+#### Environment Variables
+
+Open your Terminal app and navigate to the root of your project. Run the following command to copy the development environment variables to the correct place:
+
+```
+cp .env.example .env
+```
+
 Now you have node setup you can build the site using the following commands:
 
 ```
