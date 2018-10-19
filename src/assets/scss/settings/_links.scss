@@ -1,35 +1,39 @@
 .ncce-link__on-light {
-  color: $ncce-blue-link !important;
+  &:link {
+    color: $ncce-blue-link;
+  }
   &:hover {
-    color: $ncce-pink !important;
+    color: $ncce-pink;
   }
   &:focus {
-    background-color: $ncce-grey-x-light !important;
-    color: $ncce-pink !important;
-    outline-color: $ncce-grey-x-light !important;
+    background-color: $ncce-grey-x-light;
+    color: $ncce-pink;
+    outline-color: $ncce-grey-x-light;
   }
   &:active {
-    color: $ncce-grey-x-light !important;
+    color: $ncce-grey-x-light;
   }
   &:visited {
-    color: $ncce-purple !important;
+    color: $ncce-purple;
   }
 }
 
 .ncce-link__on-dark {
-  color: $ncce-grey-x-light !important;
+  &:link {
+    color: $ncce-grey-x-light;
+  }
   &:hover {
-    color: $ncce-white !important;
+    color: $ncce-white;
   }
   &:focus {
-    background-color: $ncce-black !important;
-    color: $ncce-white !important;
-    outline-color: $ncce-black !important;
+    background-color: $ncce-black;
+    color: $ncce-white;
+    outline-color: $ncce-black;
   }
   &:active {
-    color: $ncce-black !important;
+    color: $ncce-black;
   }
   &:visited {
-    color: $ncce-grey !important;
+    color: $ncce-grey;
   }
 }
