@@ -16,6 +16,11 @@ npm install
 
 ## Development
 
+Copy example environment variables:
+```
+cp .env.example .env
+```
+
 Build the site:
 ```
 npm run build
