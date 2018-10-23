@@ -6,8 +6,20 @@
   margin: 5px 0;
   @include govuk-media-query($from: tablet) {
     background-position: top right;
-    background-size: 60%;
+    background-size: 500px;
     margin: 15px;
+  }
+
+  @include govuk-media-query($from: desktop) {
+    background-size: 800px;
+  }
+
+  br {
+    display: none;
+
+    @include govuk-media-query($from: tablet) {
+      display: block;
+    }
   }
 }
 
@@ -20,7 +32,7 @@
   padding-top: 70px;
   @include govuk-media-query($from: tablet) {
     background-position: bottom left;
-    background-size: 95%;
+    background-size: 72%;
     font-size: 48px;
     padding-top: 90px;
   }

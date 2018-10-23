@@ -7,6 +7,7 @@
   margin-bottom: 0;
   padding-bottom: 10px;
   padding-top: 18px;
+  padding-bottom: 16px;
 }
 .govuk-header__logotype-text {
   font-family: $font-family-heading;
@@ -14,6 +15,7 @@
 }
 
 .govuk-header__link--homepage {
+  line-height: 1;
   &:hover {
     border-color: transparent;
     color: $ncce-grey-x-light;
