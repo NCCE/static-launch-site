@@ -38,11 +38,11 @@
 
 .ncce-training__google-logo {
   display: block;
-  height: 38px;
+  // height: 38px;
   margin-right: 5px;
   padding: 5px 0;
   vertical-align: middle;
-  width: 90px;
+  // width: 90px;
 
   @include govuk-media-query($from: tablet) {
     display: inline-block;
