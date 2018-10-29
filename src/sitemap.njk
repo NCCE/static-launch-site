@@ -6,7 +6,7 @@ permalink: /sitemap.xml
 {%- for item in collections.all %}
   {% if item.data.includeInSitemap %}
     <url>
-      <loc>https://example.com{{ item.url }}</loc>
+      <loc>https://teachcomputing.org{{ item.url }}</loc>
       <changefreq>{{ item.data.changeFreq or "monthly" }}</changefreq>
       <priority>{{ item.data.priority or "0.5" }}</priority>
     </url>
