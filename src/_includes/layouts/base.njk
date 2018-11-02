@@ -28,21 +28,24 @@
     <meta name="twitter:description" content="Providing resources, training and support for teaching Computing in primary and secondary schools and colleges from Key Stage 1 through to A Level.">
     <meta name="twitter:image" content="https://teachcomputing.org/assets/images/social-image.jpg">
     <meta name="twitter:image:alt" content="Teaching Computing">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-56S5ZR7');</script>
+    <!-- End Google Tag Manager -->
   </head>
   <body class="js-enabled govuk-template__body">
     <section>
       {{ layoutContent | safe }}
     </section>
     <script src="assets/js/script.js"></script>
-    <script>window.GOVUKFrontend.initAll()</script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ env.googleAnalyticsApiKey }}"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', '{{ env.googleAnalyticsApiKey }}');
-    </script>
+    <script>window.GOVUKFrontend.initAll();</script>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56S5ZR7"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
   </body>
 </html>
