@@ -2,6 +2,9 @@
   &:link {
     color: $ncce-blue-link;
   }
+  &:visited {
+    color: $ncce-purple;
+  }
   &:hover {
     color: $ncce-pink;
   }
@@ -13,14 +16,14 @@
   &:active {
     color: $ncce-grey-x-light;
   }
-  &:visited {
-    color: $ncce-purple;
-  }
 }
 
 .ncce-link__on-dark {
   &:link {
     color: $ncce-grey-x-light;
+  }
+  &:visited {
+    color: $ncce-grey;
   }
   &:hover {
     color: $ncce-white;
@@ -32,8 +35,5 @@
   }
   &:active {
     color: $ncce-black;
-  }
-  &:visited {
-    color: $ncce-grey;
   }
 }
