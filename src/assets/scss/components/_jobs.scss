@@ -1,25 +1,26 @@
 .ncce-jobs-container {
-  background-color: $ncce-lavender;
-  padding: 1.5rem 0;
+	background-color: $ncce-lavender;
+	padding: 1.5rem 0;
 }
 
 .ncce-jobs__heading {
-  margin-bottom: 1rem;
+	font-weight: 400;
+	margin-bottom: 1rem;
 }
 
 .ncce-jobs__image {
-  margin-bottom: 1.5rem;
-  width: 50%;
+	margin-bottom: 1.5rem;
+	width: 50%;
 
-  @include govuk-media-query($from: tablet) {
-    width: 75%;
-  }
+	@include govuk-media-query($from: tablet) {
+		width: 75%;
+	}
 }
 
 .ncce-jobs__list {
-  margin-bottom: 25px;
+	margin-bottom: 25px;
 }
 
 .ncce-jobs__list-item {
-  margin: 0.8rem 0;
+	margin: 0.8rem 0;
 }
