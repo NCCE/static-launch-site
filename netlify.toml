@@ -1,4 +1,5 @@
 [build]
   command = "npm run build"
   publish = "dist"
-  NODE_ENV = "8.12.0"
+  NODE_ENV = "production"
+  NODE_VERSION = "8.12.0"
