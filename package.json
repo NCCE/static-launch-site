@@ -1,7 +1,7 @@
 {
-  "name": "project-everest",
+  "name": "project-ncce",
   "version": "0.0.1",
-  "description": "Project Everest static site generator",
+  "description": "NCCE static site generator",
   "main": "index.js",
   "scripts": {
     "dev": "gulp build & gulp watch & gulp serve",
